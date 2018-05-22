@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/tus/tusd"
+	"github.com/kuaner/tusd"
 )
 
 var _ tusd.DataStore = &LimitedStore{}

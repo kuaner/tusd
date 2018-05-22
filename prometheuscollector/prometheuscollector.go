@@ -12,7 +12,7 @@ import (
 	"strconv"
 	"sync/atomic"
 
-	"github.com/tus/tusd"
+	"github.com/kuaner/tusd"
 
 	"github.com/prometheus/client_golang/prometheus"
 )

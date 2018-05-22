@@ -3,8 +3,8 @@ package cli
 import (
 	"net/http"
 
-	"github.com/tus/tusd"
-	"github.com/tus/tusd/prometheuscollector"
+	"github.com/kuaner/tusd"
+	"github.com/kuaner/tusd/prometheuscollector"
 
 	"github.com/prometheus/client_golang/prometheus"
 )

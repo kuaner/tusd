@@ -18,8 +18,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/tus/tusd"
-	"github.com/tus/tusd/uid"
+	"github.com/kuaner/tusd"
+	"github.com/kuaner/tusd/uid"
 )
 
 // See the tusd.DataStore interface for documentation about the different

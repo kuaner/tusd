@@ -7,7 +7,7 @@ import (
 	io "io"
 
 	gomock "github.com/golang/mock/gomock"
-	tusd "github.com/tus/tusd"
+	tusd "github.com/kuaner/tusd"
 )
 
 // Mock of FullDataStore interface

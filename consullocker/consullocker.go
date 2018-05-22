@@ -17,7 +17,7 @@ import (
 	"time"
 
 	consul "github.com/hashicorp/consul/api"
-	"github.com/tus/tusd"
+	"github.com/kuaner/tusd"
 )
 
 type ConsulLocker struct {

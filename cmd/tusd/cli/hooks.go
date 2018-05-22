@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/tus/tusd"
+	"github.com/kuaner/tusd"
 
 	"github.com/sethgrid/pester"
 )
