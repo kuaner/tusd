@@ -189,7 +189,7 @@ func (store FileStore) newLock(id string) (lockfile.Lockfile, error) {
 
 // binPath returns the path to the .bin storing the binary data.
 func (store FileStore) binPath(id string) string {
-	return filepath.Join(store.Path, id+".bin")
+	return filepath.Join(store.Path, id)
 }
 
 // infoPath returns the path to the .info file storing the file's info.
