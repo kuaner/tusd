@@ -595,6 +595,7 @@ var mimeInlineBrowserWhitelist = map[string]struct{}{
 	"text/plain": struct{}{},
 
 	"image/png":  struct{}{},
+	"image/apng": struct{}{},
 	"image/jpeg": struct{}{},
 	"image/gif":  struct{}{},
 	"image/bmp":  struct{}{},
@@ -606,6 +607,7 @@ var mimeInlineBrowserWhitelist = map[string]struct{}{
 	"audio/x-pn-wav":  struct{}{},
 	"audio/webm":      struct{}{},
 	"video/webm":      struct{}{},
+	"video/mp4":       struct{}{},
 	"audio/ogg":       struct{}{},
 	"video/ogg ":      struct{}{},
 	"application/ogg": struct{}{},
