@@ -199,6 +199,14 @@ func (store FileStore) infoPath(id string) string {
 
 // writeInfo updates the entire information. Everything will be overwritten.
 func (store FileStore) writeInfo(id string, info tusd.FileInfo) error {
+	if _, ok := info.MetaData["file"]; ok {
+		info.MetaData["filename"] = info.MetaData["file"]
+		delete(info.MetaData, "file")
+	}
+	if _, ok := info.MetaData["type"]; ok {
+		info.MetaData["filetype"] = info.MetaData["type"]
+		delete(info.MetaData, "type")
+	}
 	data, err := json.Marshal(info)
 	if err != nil {
 		return err
