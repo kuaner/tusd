@@ -105,6 +105,16 @@ func (_mr *_MockFullDataStoreRecorder) FinishUpload(arg0 interface{}) *gomock.Ca
 	return _mr.mock.ctrl.RecordCall(_mr.mock, "FinishUpload", arg0)
 }
 
+func (_m *MockFullDataStore) DeclareLength(id string, length int64) error {
+	ret := _m.ctrl.Call(_m, "DeclareLength", id, length)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+func (_mr *_MockFullDataStoreRecorder) DeclareLength(arg0, arg1 interface{}) *gomock.Call {
+	return _mr.mock.ctrl.RecordCall(_mr.mock, "DeclareLength", arg0, arg1)
+}
+
 // Mock of Locker interface
 type MockLocker struct {
 	ctrl     *gomock.Controller
